@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+    db:
+        image: mysql:5.7
+        env_file:
+            - ./.env
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./docker/data.sql:/docker-entrypoint-initdb.d/data.sql
+    php:
+        build: .
+        volumes:
+            - ./config:/srv/config
+            - ./public:/srv/public
+            - ./src:/srv/src
+            - ./.env:/srv/.env
+            - ./docker/httpd.conf:/etc/apache2/sites-available/000-default.conf
+        depends_on:
+            - db
+            - node
+        ports:
+            - "8000:80"
+        stdin_open: true
+        tty: true
+    node:
+        build:
+            context: .
+            dockerfile: node.dockerfile
+        volumes:
+            - ./public:/srv/public
+            - ./assets:/srv/assets
+            - ./webpack.config.js:/srv/webpack.config.js
+        command: npm run dev

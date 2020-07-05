@@ -1,0 +1,40 @@
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Clearfix float start */
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* Logo start */
+.logo-box {
+    float: left;
+    margin: 0 4rem;
+}
+
+.logo {
+    height: 100%;
+}
+
+/* Top wave image */
+.top-wave {
+    background-image: url(/img/top-bg.svg);
+    background-repeat: no-repeat;
+}
+
+
+

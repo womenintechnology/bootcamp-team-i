@@ -1,0 +1,26 @@
+.nav {
+    float: left;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav__link:link, 
+.nav__link:visited {
+    display: block;
+    text-decoration: none;
+    color: #7a24ab;
+    padding: 1rem;
+    margin: .5rem 6rem;
+    margin-left: 0;
+    height: 3rem;
+}
+
+.nav__link:hover {
+    border-bottom: .3rem solid darken(#7a24ab, 50%);
+}
+
+.nav__link:active {
+    border-bottom: .3rem solid #2478f9;
+}

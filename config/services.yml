@@ -1,0 +1,51 @@
+services:
+    HomeController:
+        class: WIT\FullStackBootcamp\Home\Controller
+        arguments:
+            - '@twig'
+    ContactController:
+        class: WIT\FullStackBootcamp\Contact\Controller
+        arguments:
+            - '@twig'
+    AboutUsController:
+        class: WIT\FullStackBootcamp\AboutUs\Controller
+        arguments:
+            - '@twig'
+    PostsController:
+        class: WIT\FullStackBootcamp\Blog\Controller\Posts
+        arguments:
+            - '@twig'
+            - '@postsRepository'
+    PostController:
+        class: WIT\FullStackBootcamp\Blog\Controller\Post
+        arguments:
+            - '@twig'
+            - '@postsRepository'
+            - '@request'
+    ApiController:
+        class: WIT\FullStackBootcamp\Api\Controller
+        arguments:
+            - '@postsRepository'
+            - '@request'
+    twig:
+        class: WIT\FullStackBootcamp\Common\View
+        arguments:
+            - '@twigEnvironment'
+    twigEnvironment:
+        class: Twig\Environment
+        arguments:
+            - '@twigLoader'
+    twigLoader:
+        class: Twig\Loader\FilesystemLoader
+        arguments:
+            - '../src'
+    postsRepository:
+        class: WIT\FullStackBootcamp\Blog\Repository\Posts\MySQL
+        arguments:
+            - '@pdoMysql'
+    pdoMysql:
+        class: PDO
+        arguments:
+            - '%database.mysql.dns%'
+            - '%database.mysql.user%'
+            - '%database.mysql.password%'

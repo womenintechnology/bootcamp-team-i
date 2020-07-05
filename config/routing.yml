@@ -1,0 +1,31 @@
+home:
+    path:     /
+    defaults:
+        _controller: 'HomeController'
+contact:
+    path:     /kontakt/
+    defaults:
+        _controller: 'ContactController'
+about_us:
+    path:     /o-nas/
+    defaults:
+        _controller: 'AboutUsController'
+posts:
+    path:     /blog/
+    defaults:
+        _controller: 'PostsController'
+post:
+    path:     /blog/{id}
+    defaults:
+        _controller: 'PostController'
+    requirements:
+        id: '^[0-9]+'
+api:
+    path:     /api/posts/{page}/{postsPerPage}
+    defaults:
+        _controller: 'ApiController'
+        page: 1
+        postsPerPage: 10
+    requirements:
+        page: '\d+'
+        postsPerPage: '\d+'

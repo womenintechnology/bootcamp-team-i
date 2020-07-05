@@ -1,0 +1,4 @@
+vendor/
+bin/*
+!bin/composer
+node_modules

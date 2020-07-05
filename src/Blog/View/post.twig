@@ -1,0 +1,21 @@
+{% set post = {
+    'title': 'Lorem ipsum',
+    'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'url':'/img/slider1.svg',
+    'date':'10-02-2020',
+    'author_forename': 'John',
+    'author_surname': 'Nowak'
+}%}
+{% include 'Common/View/header.twig' %}
+{% block body %}
+	<body class="top-wave">
+	{% endblock %}
+	<section class="container">
+		<h1>{{ post.title }}</h1>
+		<p>{{ post.date }}</p>
+		<p>{{ post.author_forename }}
+			{{ post.author_surname }}</p>
+		<p>{{ post.content|raw }}</p>
+	</section>
+	{% include 'Common/View/footer.twig' %}
+</body>

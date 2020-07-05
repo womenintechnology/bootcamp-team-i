@@ -1,0 +1,18 @@
+.slider {
+    position: fixed;
+    right: 5%;
+    top: 40%;
+}
+
+.slider a:link {
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 1rem;
+    background-color: #c5c1f1;
+}
+
+.slider a:link:hover {
+    background-color: #37096d;
+}
