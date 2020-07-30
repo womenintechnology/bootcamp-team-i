@@ -4,7 +4,7 @@
 
 ### Docker set up
 
-Docker is an open-source containerization software that creates isolated environments to run an application. Hence, you develop, test, and run multiple applications on the same machine.
+Docker is an open-source contrization software that creates isolated environments to run an application. Hence, you develop, test, and run multiple applications on the same machine.
 
 #### Linux:
 
