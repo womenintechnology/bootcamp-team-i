@@ -1,0 +1,29 @@
+/* ABOUT PAGE */
+.person-box {
+    /* float; set element on left side */
+    /* padding;  set the same space around the contents of the box */
+    /* border-radius; */
+    /* box-shadow; */
+    /* text-align; center the text */
+}
+
+.person-box:not(:last-child) { /* The :not() CSS pseudo-class represents elements that do not match a list of selectors */
+    /* margin-right ; */
+}
+
+.person-box__img {
+    /* Make a rectangle by setting values in hight and width properties */
+    /* height; */
+    /* width; */
+    display: inline-block;
+    /* border-radius; make a circle shape */
+    background-color: antiquewhite;
+}
+
+.person-box__description {
+    /* text-align; center the text */
+
+}
+.u-center-text {
+    text-align: center;
+}
