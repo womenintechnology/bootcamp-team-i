@@ -1,4 +1,4 @@
-/* Normalization */
+/* Normalisation */
 *,
 *::before,
 *::after {
@@ -36,12 +36,11 @@ h1 {
     margin: 0.67em 0;
 }
 
-/* p,
 .paragraph {
     margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.6;
-} */
+}
 
 
 /* Utilities */ 
@@ -57,12 +56,7 @@ h1 {
     margin: 4rem 0;
 }
 
-/* Sections */
-.container {
-    margin: 0 -20rem;
-    padding: 7rem 40rem;
-}
-
+/* Commons */
 
 /* Clearfix */
 .clearfix::after { 
@@ -89,38 +83,6 @@ h1 {
     background-position: left 0 top -350px;
 }
 
-/* Move forward icon */
-
 .move-forward-icon {
     transform: rotate(180deg);
 }
-
-/* button */
-/* .read-more-button {
-    float: right;
-    display: block;
-}
-
-.read-more-button span,
-.read-previous-button span {
-    color: #7a24ab;
-    font-weight: 700;
-    position: relative;
-    top: -.8rem;
-} */
-
-/* preamble */
-.module {
-    width: 100%;
-    margin: 0 0 1em 0;
-    overflow: hidden;
-  }
-  .module p {
-    margin: 0;
-  }
-  
-  .line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;  
-  }
