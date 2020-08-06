@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap);
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -560,4 +561,78 @@ li {
 
 .globe-img--small {
   transform: scale(30%) translate(-100%, 50%); }
+
+/* Normalisation */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; }
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  outline-width: 0; }
+
+/* Topography */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+.paragraph {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6; }
+
+/* Utilities */
+.u-center-text {
+  text-align: center; }
+
+.u-margin--small {
+  margin: 2rem 0; }
+
+.u-margin--medium {
+  margin: 4rem 0; }
+
+/* Commons */
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Logo */
+.logo-box {
+  float: left;
+  margin: 0 8rem; }
+
+.logo {
+  width: 80%; }
+
+/* Top wave image */
+.top-wave {
+  background-image: url(/img/top-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 0 top -350px; }
+
+.move-forward-icon {
+  transform: rotate(180deg); }
 
