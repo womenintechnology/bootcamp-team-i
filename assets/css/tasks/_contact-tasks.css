@@ -1,0 +1,57 @@
+/* CONTACT PAGE */
+
+/* assets/css/pages/_contact.css */
+.contact-section {
+    background-image: url(/img/contact-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 20rem bottom 0;
+}
+
+.form {
+    /* padding;  set the same space around the contents of the box */
+    /* width; the element should occupy the half of the available width */
+    /* background-color; */
+    /* border-radius; */
+    position: relative;
+    left: -10rem;
+}
+
+.form-title {
+    /* font-weight; */
+}
+
+.form-input {
+    /* display; the element should be type of element which occupy the entire available place */
+    /* width; the element should occupy the half of the available width */
+    /* padding; */
+    /* margin-top; */
+    /* border; we don't want border here*/ 
+    /* border-radius; */
+    outline: none;
+    height: 3rem;
+} 
+.form-input--text {
+    /* height; */
+}
+  .form-input:focus { /* pseudo class:focus - It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's "tab" key */
+    /* border; */
+  }
+  
+.submit-button {
+    display: inline-block;
+    /* border; we don't want border here*/ 
+    /* border-radius; */
+    /* background-color; pick color from design; You can use color picker build in developer tool*/
+    /* margin-top; */
+    /* padding; */
+    /* cursor; set the value of the cursor property that changes the arrow to a clicking hand */
+    /* text-transform; set text with uppercase */
+    /* color; */
+}
+
+.hide-label {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+ }
