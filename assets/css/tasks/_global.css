@@ -36,12 +36,12 @@ h1 {
     margin: 0.67em 0;
 }
 
-p,
+/* p,
 .paragraph {
     margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.6;
-}
+} */
 
 
 /* Utilities */ 
@@ -96,7 +96,7 @@ p,
 }
 
 /* button */
-.read-more-button {
+/* .read-more-button {
     float: right;
     display: block;
 }
@@ -107,7 +107,7 @@ p,
     font-weight: 700;
     position: relative;
     top: -.8rem;
-}
+} */
 
 /* preamble */
 .module {

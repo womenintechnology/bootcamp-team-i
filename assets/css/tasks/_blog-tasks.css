@@ -1,36 +1,26 @@
 /* POSTS PAGE */
+
 li:first-child {
     margin-top: 0;
-     /* The :first-child CSS pseudo-class represents the first element among a group of sibling elements. */
-    /* margin-top; reset the value for this margin */
 }
 
 li:last-child {
     margin-bottom: 0;
-    /* margin-bottom; reset the value for this margin */
 }
 
 .post-box__img {
     width: 50%;
     float: left;
     margin-right: 0;
-    /* the element should occupy the half of the available width. Take into account the width of a content and a margin */
-    /* width; */
-    /* float; set element on left */
-    /* display; the element should be type of element which occupy the entire available place */
-    /* margin-right; */
 }
 
 .post-box__img img {
     width: 80%;
-    /* width; the element should occupy the entire available width */
 }
 
 .post-box__description {
     float: left;
     width: 50%;
-    /* float; set element on left */
-    /* width; the element should occupy the half of the available width */
 }
 
 .read-more-button {
@@ -47,18 +37,14 @@ li:last-child {
     float:left;
     margin-bottom: 0;
     color: black;
-    /* float; set element on left */
-    /* margin-bottom; */
 }
 
 .post-description__date {
     float: right;
-    /* float; set element on right */
 }
 
 .post-description__preamble {
     width: 100%;
-    /* width; the element should occupy the entire available width */
 }
 
 .sorting-button {
