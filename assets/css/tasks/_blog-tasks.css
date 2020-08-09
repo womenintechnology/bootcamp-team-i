@@ -1,0 +1,54 @@
+/* POSTS PAGE */
+
+li:first-child {
+    margin-top: 0;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.post-box__img {
+    width: 50%;
+    float: left;
+    margin-right: 0;
+}
+
+.post-box__img img {
+    width: 80%;
+}
+
+.post-box__description {
+    float: left;
+    width: 50%;
+}
+
+.read-more-button {
+    float: right;
+    /* color; */
+}
+
+.post-description__header:hover {
+    color: blueviolet;
+    /* color; set the color that will appear when you hover over the item */
+}
+
+.post-description__title {
+    float:left;
+    margin-bottom: 0;
+    color: black;
+}
+
+.post-description__date {
+    float: right;
+}
+
+.post-description__preamble {
+    width: 100%;
+}
+
+.sorting-button {
+border: 0;
+border-radius: 10px;
+padding: 5px;
+}
