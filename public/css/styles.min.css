@@ -562,7 +562,7 @@ li {
 .globe-img--small {
   transform: scale(30%) translate(-100%, 50%); }
 
-/* Normalisation */
+/* Normalization */
 *,
 *::before,
 *::after {
@@ -596,6 +596,7 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
+p,
 .paragraph {
   margin: 1rem 0;
   font-size: 1rem;
@@ -611,7 +612,11 @@ h1 {
 .u-margin--medium {
   margin: 4rem 0; }
 
-/* Commons */
+/* Sections */
+.container {
+  margin: 0 -20rem;
+  padding: 7rem 40rem; }
+
 /* Clearfix */
 .clearfix::after {
   content: "";
@@ -633,8 +638,35 @@ h1 {
   background-size: cover;
   background-position: left 0 top -350px; }
 
+/* Move forward icon */
 .move-forward-icon {
   transform: rotate(180deg); }
+
+/* button */
+.read-more-button {
+  float: right;
+  display: block; }
+
+.read-more-button span,
+.read-previous-button span {
+  color: #7a24ab;
+  font-weight: 700;
+  position: relative;
+  top: -.8rem; }
+
+/* preamble */
+.module {
+  width: 100%;
+  margin: 0 0 1em 0;
+  overflow: hidden; }
+
+.module p {
+  margin: 0; }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical; }
 
 /* SINGLE ARTICLE PAGE */
 .container {
@@ -773,6 +805,11 @@ li:last-child {
 
 /* ABOUT PAGE */
 .person-box {
+  float: left;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
   /* float; set element on left side */
   /* padding;  set the same space around the contents of the box */
   /* border-radius; */
@@ -780,18 +817,23 @@ li:last-child {
   /* text-align; center the text */ }
 
 .person-box:not(:last-child) {
+  margin-right: 100px;
   /* The :not() CSS pseudo-class represents elements that do not match a list of selectors */
   /* margin-right ; */ }
 
 .person-box__img {
+  width: 150px;
+  height: 200px;
   /* Make a rectangle by setting values in hight and width properties */
   /* height; */
   /* width; */
   display: inline-block;
+  border-radius: 50%;
   /* border-radius; make a circle shape */
   background-color: antiquewhite; }
 
 .person-box__description {
+  text-align: center;
   /* text-align; center the text */ }
 
 .u-center-text {

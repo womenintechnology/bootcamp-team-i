@@ -1,5 +1,10 @@
 /* ABOUT PAGE */
 .person-box {
+    float: left;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.1) ;
+    text-align: center;
     /* float; set element on left side */
     /* padding;  set the same space around the contents of the box */
     /* border-radius; */
@@ -7,20 +12,26 @@
     /* text-align; center the text */
 }
 
-.person-box:not(:last-child) { /* The :not() CSS pseudo-class represents elements that do not match a list of selectors */
+.person-box:not(:last-child) { 
+    margin-right: 100px;
+    /* The :not() CSS pseudo-class represents elements that do not match a list of selectors */
     /* margin-right ; */
 }
 
 .person-box__img {
+    width: 150px;
+    height: 200px;
     /* Make a rectangle by setting values in hight and width properties */
     /* height; */
     /* width; */
     display: inline-block;
+    border-radius: 50%;
     /* border-radius; make a circle shape */
     background-color: antiquewhite;
 }
 
 .person-box__description {
+    text-align: center;
     /* text-align; center the text */
 
 }
