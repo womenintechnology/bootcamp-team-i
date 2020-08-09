@@ -6,49 +6,62 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 20rem bottom 0;
+    
 }
 
 .form {
-    /* padding;  set the same space around the contents of the box */
-    /* width; the element should occupy the half of the available width */
-    /* background-color; */
-    /* border-radius; */
+    padding: 10px 10px;
+    width: 40%;
+    background-color: white;
+    border-radius: 1px;
     position: relative;
-    left: -10rem;
+    left: 3px;
+    bottom: 1px;
+    text-align: left;
+    
 }
 
 .form-title {
-    /* font-weight; */
+    font-weight: lighter
+    position: relative;
+    color:#676767;
+    
+    
 }
 
 .form-input {
-    /* display; the element should be type of element which occupy the entire available place */
-    /* width; the element should occupy the half of the available width */
-    /* padding; */
-    /* margin-top; */
-    /* border; we don't want border here*/ 
-    /* border-radius; */
+    display: 100%;
+    width: 80%;
+    height: 200px;
+    padding: 25px 50px 75px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: none;
+    border-radius: 0.7px;
     outline: none;
-    height: 3rem;
+    height: 3px;
+    
 } 
 .form-input--text {
-    /* height; */
+    height: 1000px;
 }
-  .form-input:focus { /* pseudo class:focus - It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's "tab" key */
-    /* border; */
+  .form-input:focus { 
+    border: 1px;
   }
   
 .submit-button {
     display: inline-block;
-    /* border; we don't want border here*/ 
-    /* border-radius; */
-    /* background-color; pick color from design; You can use color picker build in developer tool*/
-    /* margin-top; */
-    /* padding; */
-    /* cursor; set the value of the cursor property that changes the arrow to a clicking hand */
-    /* text-transform; set text with uppercase */
-    /* color; */
+    border: none 
+    border-radius: 2em;
+    background-color:#DDCCFF;
+    margin-top: 1em;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: purple;
 }
+
+
 
 .hide-label {
     position: absolute;
