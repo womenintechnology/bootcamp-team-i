@@ -727,6 +727,7 @@ p,
 .globe-img--small {
   transform: scale(0.3) translate(-100%, 50%); }
 
+<<<<<<< HEAD
 .container {
   margin: 0 -20rem;
   padding: 7rem 40rem; }
@@ -754,6 +755,63 @@ p,
 .post-description__title {
   float: left;
   margin-bottom: 30px; }
+=======
+.contact-section {
+  background-image: url(/img/contact-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 20rem bottom 0; }
+
+.person-box {
+  float: left;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  text-align: center; }
+
+.person-box:not(:last-child) {
+  margin-right: 5rem; }
+
+.person-box__img {
+  height: 6rem;
+  width: 6rem;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: antiquewhite; }
+
+.person-box__description {
+  text-align: center; }
+
+/* POSTS PAGE */
+li:first-child {
+  margin-top: 0; }
+
+li:last-child {
+  margin-bottom: 0; }
+
+.post-box__img {
+  width: 45%;
+  float: left;
+  display: block;
+  margin-right: 5%; }
+
+.post-box__img img {
+  width: 100%; }
+
+.post-box__description {
+  float: left;
+  width: 50%; }
+
+.read-more-button {
+  color: #333e4f; }
+
+.post-description__header:hover {
+  color: #7a24ab; }
+
+.post-description__title {
+  float: left;
+  margin-bottom: 1rem; }
+>>>>>>> Fix project's theme
 
 .post-description__date {
   float: right; }
