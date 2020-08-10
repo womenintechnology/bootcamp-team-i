@@ -15,9 +15,6 @@
 @import "components/read-more-button";
 
 @import "pages/home";
-@import "pages/contact";
-@import "pages/about";
-@import "pages/blog";
 
 @import "sections/container";
 
@@ -26,4 +23,3 @@
 @import "tasks/global";
 @import "tasks/aboutus-tasks";
 @import "tasks/contact-tasks";
-
