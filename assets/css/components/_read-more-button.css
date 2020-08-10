@@ -1,0 +1,13 @@
+.read-more-button {
+    float: right;
+    display: block;
+}
+
+.read-more-button span,
+.read-previous-button span {
+    color: #7a24ab;
+    font-weight: 700;
+    position: relative;
+    top: -.8rem;
+   
+}
