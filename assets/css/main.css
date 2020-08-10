@@ -15,8 +15,10 @@
 @import "components/read-more-button";
 
 @import "pages/home";
+@import "pages/contact";
+@import "pages/about";
+@import "pages/blog";
 
-<<<<<<< HEAD
 @import "sections/container";
 
 @import "tasks/article-tasks";
@@ -24,6 +26,4 @@
 @import "tasks/global";
 @import "tasks/aboutus-tasks";
 @import "tasks/contact-tasks";
-=======
-@import "tasks/_contact-tasks.css";
->>>>>>> spotted some errors in html; added some poor css styles
+
