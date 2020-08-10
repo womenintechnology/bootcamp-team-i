@@ -823,18 +823,13 @@ li:last-child {
 
 .person-box__img {
   width: 50px;
-  height: 70px;
-  /* Make a rectangle by setting values in hight and width properties */
-  /* height; */
-  /* width; */
+  height: 50px;
   display: inline-block;
   border-radius: 50%;
-  /* border-radius; make a circle shape */
   background-color: antiquewhite; }
 
 .person-box__description {
-  text-align: center;
-  /* text-align; center the text */ }
+  text-align: center; }
 
 .u-center-text {
   text-align: center; }
