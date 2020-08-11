@@ -24,3 +24,9 @@
 .nav__link:active {
     border-bottom: .3rem solid #2478f9;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

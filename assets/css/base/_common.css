@@ -9,32 +9,35 @@
     width: 1px;
 }
 
-/* Clearfix float start */
-.clearfix::before,
+/* Clearfix */
 .clearfix::after {
-    content: " ";
+    content: "";
     display: table;
-}
-
-.clearfix::after {
     clear: both;
-}
+ }
 
-/* Logo start */
+/* Logo */
 .logo-box {
     float: left;
-    margin: 0 4rem;
+    margin: 0 8rem;
 }
 
 .logo {
-    height: 100%;
+    width: 80%
 }
 
 /* Top wave image */
 .top-wave {
     background-image: url(/img/top-bg.svg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 0 top -350px;
 }
+
+.move-forward-icon {
+    transform: rotate(180deg);
+}
+
 
 
 

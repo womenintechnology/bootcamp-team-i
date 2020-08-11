@@ -1,0 +1,124 @@
+/* CONTACT PAGE */
+
+.contact-section {
+    background-image: url(/img/contact-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 20rem bottom 0;
+}
+
+.container {
+    margin: 0 -20rem;
+    padding: 7rem 40rem;
+}
+
+.form {
+    padding: 2rem;
+    width: 50%;
+    background-color: #f3f2fc;
+    border-radius: 2rem;
+    position: relative;
+    left: -10rem;
+}
+
+.form-title {
+    font-weight: normal;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    height: 3rem;
+} 
+.form-input--text {
+    height: 5rem;
+}
+  .form-input:focus {
+    border: 2px solid dodgerblue;
+  }
+  
+.submit-button {
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background-color: #e1dffd;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #7a24ab;
+}
+
+.hide-label {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+ }
+ 
+/* CONTACT PAGE needed correction from PR#10
+
+.contact-section {
+    background-image: url(/img/contact-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 20rem bottom 0;   
+}
+
+.form {
+    padding: 10px 10px;
+    width: 40%;
+    background-color: white;
+    border-radius: 1px;
+    position: relative;
+    left: 3px;
+    bottom: 1px;
+    text-align: left;   
+}
+
+.form-title {
+    font-weight: lighter;
+    position: relative;
+    color:#676767;   
+}
+
+.form-input {
+    display: 100%;
+    width: 80%;
+    height: 200px;
+    padding: 25px 50px 75px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: none;
+    border-radius: 0.7px;
+    outline: none;
+    height: 3px;   
+} 
+.form-input--text {
+    height: 1000px;
+}
+  .form-input:focus { 
+    border: 1px;
+  }
+  
+.submit-button {
+    display: inline-block;
+    border: none; 
+    border-radius: 2em;
+    background-color:#DDCCFF;
+    margin-top: 1em;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: purple;
+}
+
+.hide-label {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+ } */
