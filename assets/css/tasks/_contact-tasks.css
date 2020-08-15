@@ -4,14 +4,17 @@
     background-image: url(/img/contact-img.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right 10rem bottom 0;   
+    background-position: right 20rem bottom 0;   
 }
 .form {
     padding: 20px;
     width: 40%;
     background-color: #f3f2fc;
     border-radius: 1rem;
-    position: left;
+    position: relative;
+    right: 150px;
+    bottom: 200px;
+    top: -20px;
     text-align: center;
 }
 .form-title {
@@ -24,13 +27,13 @@
     height: 50px;
     padding-top: 25px;
     padding-right: 40px;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
     padding-left: 40px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
     border: none;
-    border-radius: 1px;
+    border-radius: 20px;
     outline: none;
     text-align: left;  
 } 
@@ -40,13 +43,13 @@
     height: 50px;
     padding-top: 25px;
     padding-right: 40px;
-    padding-bottom: 55px;
+    padding-bottom: 85px;
     padding-left: 40px;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 10px;
     border: none;
-    border-radius: 0.7px;
+    border-radius: 20px;
     outline: none;
     text-align: left;     
 }
