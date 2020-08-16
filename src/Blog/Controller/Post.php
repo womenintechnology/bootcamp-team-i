@@ -68,9 +68,13 @@ class Post implements Common\Controller
     }
     private function getPost(): array
     {
-        /**
-         * Add your code here
-         */
-        return [];
+        $post =
+        ["title" => "Jak efektywnie uczyć się oprogramowania?",
+        "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "url" => "/img/slider1.svg",
+        "date" => "16-08-2020",
+        "author_forename" => "John",
+        "author_surname" => "Nowak",];
+        return $post;
     }
 }
