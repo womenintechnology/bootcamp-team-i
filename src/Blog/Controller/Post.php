@@ -66,7 +66,7 @@ class Post implements Common\Controller
 
         return $response;
     }
-    private function getPost(): array
+    private function getPost($id): array
     {$posts =[
         ["id" => "1",
         "title" => "Jak efektywnie uczyć się oprogramowania?",
@@ -92,4 +92,3 @@ class Post implements Common\Controller
     ];
         return $posts[$id-1]
     }
-}
