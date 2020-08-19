@@ -76,19 +76,21 @@ class Post implements Common\Controller
         "author_forename" => "John",
         "author_surname" => "Nowak"],
         ["id" => "2",
-        "title" => "Jak efektywnie uczyć się oprogramowania?",
+        "title" => "Jak efektywnie uczyć się oprogramowania2?",
         "content" => "tralalala.",
         "url" => "",
         "date" => "18-08-2020",
         "author_forename" => "John",
         "author_surname" => "Nowak"],
         ["id" => "3",
-        "title" => "Jak efektywnie uczyć się oprogramowania?",
+        "title" => "Jak efektywnie uczyć się oprogramowania3?",
         "content" => "nananana.",
         "url" => "",
         "date" => "18-08-2020",
         "author_forename" => "John",
         "author_surname" => "Nowak"]
     ];
-        return $posts[$id-1]
+    
+    return $posts[$id-1];
     }
+}
