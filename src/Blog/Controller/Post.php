@@ -44,7 +44,7 @@ class Post implements Common\Controller
     public function run(): Response
     {
         $idPost = (int)$this->request->query->get('id');
-        $post = $this->getPost();
+        $post = $this->getPost($idPost);
 
         if ($post === null) {
             throw new ResourceNotFoundException();
@@ -66,11 +66,31 @@ class Post implements Common\Controller
 
         return $response;
     }
-    private function getPost(): array
-    {
-        /**
-         * Add your code here
-         */
-        return [];
+    private function getPost($id): array
+    {$posts =[
+        ["id" => "1",
+        "title" => "Jak efektywnie uczyć się oprogramowania?",
+        "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "url" => "",
+        "date" => "18-08-2020",
+        "author_forename" => "John",
+        "author_surname" => "Nowak"],
+        ["id" => "2",
+        "title" => "Jak efektywnie uczyć się oprogramowania2?",
+        "content" => "tralalala.",
+        "url" => "",
+        "date" => "18-08-2020",
+        "author_forename" => "John",
+        "author_surname" => "Nowak"],
+        ["id" => "3",
+        "title" => "Jak efektywnie uczyć się oprogramowania3?",
+        "content" => "nananana.",
+        "url" => "",
+        "date" => "18-08-2020",
+        "author_forename" => "John",
+        "author_surname" => "Nowak"]
+    ];
+    
+    return $posts[$id-1];
     }
 }
