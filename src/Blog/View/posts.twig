@@ -1,12 +1,3 @@
-{% set posts = [
-    {
-        'id': '1',
-        'title': 'Jak efektywnie uczyć się programowania?',
-        'preamble': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        'url':'/img/slider1.svg',
-        'date':'10-02-2020',
-    }
-	] %}
 {% include 'Common/View/header.twig' %}
 {% block body %}
 	<body class="top-wave" style="font-family:Lato;">
@@ -23,54 +14,23 @@
 		{% for post in posts %}
 			<li class="u-margin--medium clearfix">
 				<a href="/blog/{{ post.id }}" class="post-box__img">
-					<img class="post-box__img" src="/img/post1.png" alt="image someone typing"></img>
+					<img class="post-box__img" src="{{post.image}}" alt=""></img>
 				</a>
 				<div class="post-box__description">
 					<a href="/blog/{{ post.id }}" class="post-description__header clearfix">
 						<span class="post post-description__date">{{post.date}}</span>
 						<h2 class="post-description__title">{{ post.title }}</h2>
 					</a>
-					<p class="post-description__preamble module line-clamp">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>			
+					<p class="post-description__preamble module line-clamp">{{ post.preamble }}</p>			
 					<a href="/blog/{{ post.id }}" class="read-more-button">
 						<span>Zobacz więcej</span>
 						<img src="/img/icon-back.svg" class="move-forward-icon" alt="it is an upside-down alternative text as this class works this way"></img>
 					</a>
 				</div>
 			</li>
-			<li class="u-margin--medium clearfix">
-				<a href="/blog/{{ post.id }}" class="post-box__img">
-					<img class="post-box__img" src="https://my-test-11.slatic.net/shop/1240135492a9f2e557b7e2e7caebd097.png_1200x1200q75.jpg_.webp" alt="image robot's hand indicates the world of technology "></img>
-				</a>
-				<div class="post-box__description">
-					<a href="/blog/{{ post.id }}" class="post-description__header clearfix">
-						<span class="post post-description__date">{{post.date}}</span>
-						<h2 class="post-description__title">{{ post.title }}</h2>
-					</a>
-					<p class="post-description__preamble module line-clamp">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>			
-					<a href="/blog/{{ post.id }}" class="read-more-button">
-						<span>Zobacz więcej</span>
-						<img src="/img/icon-back.svg" class="move-forward-icon" alt="it is an upside-down alternative text as this class works this way"></img>
-					</a>
-				</div>
-			</li>
-			<li class="u-margin--medium clearfix">
-				<a class="post-box__img" href="/blog/{{ post.id }}">
-				<img class="post-box__img img" src="https://image.freepik.com/foto-gratis/suministros-regreso-escuela_90258-1191.jpg" alt="image school stationery"></img>
-				</a>
-				<div class="post-box__description">
-					<a href="/blog/{{ post.id }}" class="post-description__header clearfix">
-						<span class="post post-description__date">{{post.date}}</span>
-						<h2 class="post-description__title">{{ post.title }}</h2>
-					</a>
-					<p class="post-description__preamble module line-clamp">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>			
-					<a href="/blog/{{ post.id }}" class="read-more-button">
-						<span>Zobacz więcej</span>
-						<img src="/img/icon-back.svg" class="move-forward-icon" alt="it is an upside-down alternative text as this class works this way"></img>
-					</a>
-				</div>
-			</li>
+			
 		{% endfor %}
-	</ul>
+		</ul>
 	</section>
 	{% include 'Common/View/footer.twig' %}
 </body>	
