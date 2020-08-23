@@ -34,7 +34,11 @@ class MySQL implements Posts
 
     public function getOne(int $id): ?Model\PostView
     {
-        return empty($row) ? null : $this->createModel($row);
+        $sql = "select from Posts";
+        $stmt = $this->pdo->query($sql);
+        $data = $stmt->fetchOne();
+
+        return $data;
     }
 
     private function createModel(array $row): Model\PostView
