@@ -71,26 +71,28 @@ class Post implements Common\Controller
         ["id" => "1",
         "title" => "Jak efektywnie uczyć się oprogramowania?",
         "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "url" => "",
+        "url" => "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ",
         "date" => "18-08-2020",
         "author_forename" => "John",
         "author_surname" => "Nowak"],
         ["id" => "2",
         "title" => "Jak efektywnie uczyć się oprogramowania2?",
         "content" => "tralalala.",
-        "url" => "",
+        "url" => "https://i.picsum.photos/id/180/2400/1600.jpg?hmac=Ig-CXcpNdmh51k3kXpNqNqcDYTwXCIaonYiBOnLXBb8",
         "date" => "18-08-2020",
         "author_forename" => "John",
         "author_surname" => "Nowak"],
         ["id" => "3",
         "title" => "Jak efektywnie uczyć się oprogramowania3?",
         "content" => "nananana.",
-        "url" => "",
+        "url" => "https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk",
         "date" => "18-08-2020",
         "author_forename" => "John",
         "author_surname" => "Nowak"]
     ];
-    
+    $url = "https://picsum.photos/id/{$id}";
+    $posts [$id-1]["url"]= $url;
+        
     return $posts[$id-1];
     }
 }
