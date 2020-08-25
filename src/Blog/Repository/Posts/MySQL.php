@@ -38,7 +38,7 @@ class MySQL implements Posts
         $stmt = $this->pdo->query($sql);
         $data = $stmt->fetchOne();
 
-        return $data;
+        return empty($data) ? null : $this->createModel($data);
     }
 
     private function createModel(array $row): Model\PostView
