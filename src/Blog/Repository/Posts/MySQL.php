@@ -34,7 +34,7 @@ class MySQL implements Posts
 
     public function getOne(int $id): ?Model\PostView
     {
-        $sql = "select from Posts";
+        $sql = "select * from Posts";
         $stmt = $this->pdo->query($sql);
         $data = $stmt->fetchOne();
 
