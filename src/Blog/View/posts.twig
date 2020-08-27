@@ -21,7 +21,7 @@
 						<span class="post post-description__date">{{post.date}}</span>
 						<h2 class="post-description__title">{{ post.title }}</h2>
 					</a>
-					<p class="post-description__preamble module line-clamp">{{ post.preamble }}</p>			
+					<p class="post-description__preamble module line-clamp">{{ post.preamble|raw }}</p>			
 					<a href="/blog/{{ post.id }}" class="read-more-button">
 						<span>Zobacz więcej</span>
 						<img src="/img/icon-back.svg" class="move-forward-icon" alt="it is an upside-down alternative text as this class works this way"></img>

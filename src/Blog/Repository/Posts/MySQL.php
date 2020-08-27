@@ -29,7 +29,11 @@ class MySQL implements Posts
 
     public function getList(int $page = 1, int $postsPerPage = 10): array
     {
-        return [];
+        $sql = "SELECT SUBSTRING(content,1,500) as 'preamble', published as `date`, id, title FROM `Posts` order by published desc LIMIT 3";
+        $stmt =$this->pdo->query($sql);
+        $data = $stmt->fetchAll();
+
+        return $data;
     }
 
     public function getOne(int $id): ?Model\PostView
@@ -53,4 +57,5 @@ class MySQL implements Posts
             )
         );
     }
+
 }
