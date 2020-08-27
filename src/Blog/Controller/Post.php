@@ -8,6 +8,7 @@ use WIT\FullStackBootcamp\Common;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use WIT\FullStackBootcamp\Blog\Model;
 
 class Post implements Common\Controller
 {
@@ -60,37 +61,22 @@ class Post implements Common\Controller
             . \DIRECTORY_SEPARATOR
             . 'post.twig',
             [
-                'post' => $post
+                'post' => [
+                    'id' => $post->getId(),
+                    'title' => $post->getTitle(),
+                    'content' => $post->getContent(),
+                    'date' => $post->getDateOfPublication()->format('d-m-Y H:i'),
+                    'author_forename' => $post->getAuthor()->getForename(),
+                    'author_surname' => $post->getAuthor()->getSurname()
+                ]
             ]
         ));
 
         return $response;
     }
-    private function getPost($id): array
-    {$posts =[
-        ["id" => "1",
-        "title" => "Jak efektywnie uczyć się oprogramowania?",
-        "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "url" => "",
-        "date" => "18-08-2020",
-        "author_forename" => "John",
-        "author_surname" => "Nowak"],
-        ["id" => "2",
-        "title" => "Jak efektywnie uczyć się oprogramowania2?",
-        "content" => "tralalala.",
-        "url" => "",
-        "date" => "18-08-2020",
-        "author_forename" => "John",
-        "author_surname" => "Nowak"],
-        ["id" => "3",
-        "title" => "Jak efektywnie uczyć się oprogramowania3?",
-        "content" => "nananana.",
-        "url" => "",
-        "date" => "18-08-2020",
-        "author_forename" => "John",
-        "author_surname" => "Nowak"]
-    ];
-    
-    return $posts[$id-1];
+
+    private function getPost(int $id): ?Model\PostView
+    {
+        return $this->postsRepository->getOne($id);
     }
 }

@@ -38,7 +38,12 @@ class MySQL implements Posts
 
     public function getOne(int $id): ?Model\PostView
     {
-        return empty($row) ? null : $this->createModel($row);
+        $sql = "SELECT Posts.id, Posts.title, Posts.content, Posts.published, Posts.author_id, Authors.forename as author_forename, Authors.surname as author_surname, Authors.email as author_email FROM Posts left join Authors on Authors.id = Posts.author_id WHERE Posts.id = :id";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([':id' => $id]);
+        $data = $stmt->fetch();
+
+        return empty($data) ? null : $this->createModel($data);
     }
 
     private function createModel(array $row): Model\PostView
@@ -47,6 +52,7 @@ class MySQL implements Posts
             (int) $row['id'],
             $row['title'],
             substr($row['content'], 0 ,100),
+            'https://picsum.photos/id',
             $row['content'],
             new \DateTime($row['published'], $this->timezone),
             new Model\AuthorView(
