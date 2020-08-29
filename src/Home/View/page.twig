@@ -1,12 +1,12 @@
 {% include 'Common/View/header.twig' %}
 <nav class="slider">
-	<a href="#slide-1"></a>
-	<a href="#slide-2"></a>
-	<a href="#slide-3"></a>
-	<a href="#slide-4"></a>
-	<a href="#slide-5"></a>
+	<a href="#slide-1" class="sliderDot"></a>
+	<a href="#slide-2" class="sliderDot"></a>
+	<a href="#slide-3" class="sliderDot"></a>
+	<a href="#slide-4" class="sliderDot"></a>
+	<a href="#slide-5" class="sliderDot"></a>
 </nav>
-<section id="slide-1" class="home-page clearfix">
+<section id="slide-1" class="MainSlider home-page clearfix">
 	<div class="row clearfix">
 		<div class="col-md-6 img-box">
 				<img class="slider-img" src="/img/slider1.svg">
@@ -23,7 +23,7 @@
 	</div>
 </section>
 
-{# <section id="slide-2" class="container home-page clearfix">
+<section id="slide-2" class="MainSlider container home-page clearfix">
 	<div class="row">
 		<div class="col-md-6 img-box">
 			<img class="slider-img" src="/img/slider2.svg">
@@ -44,5 +44,63 @@
 			</div>
 		</div>
 	</div>
-</section> #}
+</section>
+
+<section id="slide-3" class="MainSlider home-page clearfix">
+	<div class="row clearfix">
+		<div class="col-md-6 img-box">
+				<img class="slider-img" src="/img/slider1.svg">
+			</div>
+		<div class="col-md-5 text-box">
+				<img class="globe-img--small" src="/img/globe.svg">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Kobiety w IT</span>
+					<span class="heading-primary--sub">Zobacz jak zmienią świat!</span>
+					<span class="heading-primary--sub-hashtag">#WIT</span>
+				</h1>
+				<img class="globe-img--big" src="/img/globe.svg">
+			</div>
+	</div>
+</section>
+
+<section id="slide-4" class="MainSlider container home-page clearfix">
+	<div class="row">
+		<div class="col-md-6 img-box">
+			<img class="slider-img" src="/img/slider2.svg">
+		</div>
+		<div class="col-md-5">
+			<div class="text-box">
+				<div class="text-box-img">
+					<img class="globe-img--small" src="/img/code.svg">
+				</div>
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Nasz zespół</span>
+					<span class="heading-primary--sub">Poznaj nas!</span>
+					<span class="heading-primary--sub-hashtag">#zespół</span>
+				</h1>
+				<div class="text-box-img">
+					<img class="globe-img--big" src="/img/notepad.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="slide-5" class="MainSlider home-page clearfix">
+	<div class="row clearfix">
+		<div class="col-md-6 img-box">
+				<img class="slider-img" src="/img/slider1.svg">
+			</div>
+		<div class="col-md-5 text-box">
+				<img class="globe-img--small" src="/img/globe.svg">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Nasze projekty</span>
+					<span class="heading-primary--sub">Setki zadowolonych klientów!</span>
+					<span class="heading-primary--sub-hashtag">#projekty</span>
+				</h1>
+				<img class="globe-img--big" src="/img/globe.svg">
+			</div>
+	</div>
+</section>
+
 {% include 'Common/View/footer.twig' %}
