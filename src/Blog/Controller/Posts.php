@@ -51,7 +51,7 @@ class Posts implements Common\Controller
     private function getPosts(): array
     {
         $tablica=[];
-        for ($i=0; $i<3; $i = $i + 1) {
+        for ($i=0; $i<3; $i++) {
         array_push($tablica, ["id" => "$i",
         "title" => "przykład " . (string)($i + 230) . " :) ",
         "preamble" => "It is a long established fact that a reader will be
@@ -65,9 +65,8 @@ class Posts implements Common\Controller
         the years, sometimes by accident, sometimes on purpose (injected
         humour and the like).",
         "date" => "10-02-2020",
-        "image" => "https://picsum.photos/id/237/200/300"]
-        );
-        }
+        "image" => "https://picsum.photos/id/$i/200/300"]);
+                }
         
         return $tablica;
         }
