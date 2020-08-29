@@ -652,16 +652,21 @@ p,
   right: 5%;
   top: 40%; }
 
-.slider a:link {
+.sliderDot {
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
   display: block;
   margin: 1rem;
-  background-color: #c5c1f1; }
+  background-color: #c5c1f1;
+  cursor: pointer;
+  transition: background-color 0.6s ease; }
 
-.slider a:link:hover {
+.sliderDot.active {
   background-color: #37096d; }
+
+.MainSlider {
+  display: none; }
 
 .module {
   width: 100%;
