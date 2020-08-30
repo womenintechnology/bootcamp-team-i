@@ -53,7 +53,7 @@ class Posts implements Common\Controller
         $tablica=[];
         for ($i=0; $i<3; $i++) {
         array_push($tablica, ["id" => "$i",
-        "title" => "przykład " . (string)($i + 230) . " :) ",
+        "title" => "O, następny fajny post nr " . (string)($i + 1) . " :) ",
         "preamble" => "It is a long established fact that a reader will be
         distracted by the readable content of a page when looking at its
         layout. The point of using Lorem Ipsum is that it has a more-or-less
@@ -65,7 +65,7 @@ class Posts implements Common\Controller
         the years, sometimes by accident, sometimes on purpose (injected
         humour and the like).",
         "date" => "10-02-2020",
-        "image" => "https://picsum.photos/id/$i/200/300"]);
+        "image" => "https://picsum.photos/id/$i/300/200"]);
                 }
         
         return $tablica;
